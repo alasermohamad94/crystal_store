@@ -1,6 +1,5 @@
 @echo off
-cd android
-gradlew assembleDebug --no-daemon
-cd ..
+cd /d "%~dp0"
+flutter build apk --release
 
 
